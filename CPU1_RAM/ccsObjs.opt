@@ -1,0 +1,8 @@
+"./syscfg/board.obj"
+"./syscfg/c2000ware_libraries.obj"
+"./empty_driverlib_main.obj"
+"./device/F2837xD_CodeStartBranch.obj"
+"./device/device.obj"
+"../2837xD_RAM_lnk_cpu1.cmd"
+"D:/Program Files/Professional/TI/C2000Ware/C2000Ware_5_02_00_00/driverlib/f2837xd/driverlib/ccs/Debug/driverlib.lib"
+-llibc.a
