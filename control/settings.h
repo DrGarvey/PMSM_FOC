@@ -5,8 +5,8 @@
  * 原分散于 user/inc/FOC.h、user/inc/user.h、main.c 中的参数统一收敛到此文件。
  */
 
-#ifndef APP_SETTINGS_H_
-#define APP_SETTINGS_H_
+#ifndef CONTROL_SETTINGS_H_
+#define CONTROL_SETTINGS_H_
 
 /* ===================== 系统时钟 ===================== */
 #define CPU_RATE          5.00L                      // CPU 时钟 (SYSCLKOUT)，200MHz
@@ -30,4 +30,4 @@
 /* ===================== 编码器 ===================== */
 #define LINE_ENCODER      2500                       // 编码器线数 (线)
 
-#endif /* APP_SETTINGS_H_ */
+#endif /* CONTROL_SETTINGS_H_ */

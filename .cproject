@@ -52,8 +52,8 @@
                                 <option id="com.ti.ccstudio.buildDefinitions.C2000_25.11.compilerID.INCLUDE_PATH.412131645" superClass="com.ti.ccstudio.buildDefinitions.C2000_25.11.compilerID.INCLUDE_PATH" valueType="includePath">
                                     <listOptionValue value="${PROJECT_ROOT}"/>
                                     <listOptionValue value="${PROJECT_LOC}/foc"/>
-                                    <listOptionValue value="${PROJECT_LOC}/app"/>
-                                    <listOptionValue value="${PROJECT_LOC}/bsp/inc"/>
+                                    <listOptionValue value="${PROJECT_LOC}/control"/>
+                                    <listOptionValue value="${PROJECT_LOC}/hardware/inc"/>
                                     <listOptionValue value="${PROJECT_LOC}/driver"/>
                                     <listOptionValue value="${PROJECT_LOC}/driverlib"/>
                                     <listOptionValue value="${PROJECT_LOC}/driverlib/inc"/>

@@ -14,7 +14,7 @@
  *  注意：若传入量超过 ±1(如 ExDA_C = IqRef*10)，会被钳位到 ±0.99 而饱和。
  */
 
-#include "bsp.h"
+#include "hardware.h"
 
 void DA_Ctrl(float32 data_a, float32 data_b, float32 data_c, float32 data_d)
 {

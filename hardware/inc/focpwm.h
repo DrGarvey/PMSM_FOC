@@ -7,8 +7,8 @@
  *      Author: jwzho
  */
 
-#ifndef BSP_INC_FOCPWM_H_
-#define BSP_INC_FOCPWM_H_
+#ifndef HARDWARE_INC_FOCPWM_H_
+#define HARDWARE_INC_FOCPWM_H_
 
 /*------------------------------------------------------------------------------
             F2833X PWMGEN 对象的默认初始化值
@@ -29,4 +29,4 @@ void InitEpwmGPIO(void);
 void InverterRST_Init(void);
 void InverterProtect(PWMGEN *v);
 
-#endif /* BSP_INC_FOCPWM_H_ */
+#endif /* HARDWARE_INC_FOCPWM_H_ */

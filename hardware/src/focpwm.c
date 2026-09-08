@@ -5,7 +5,7 @@
  *      Author: jwzho
  */
 
-#include "bsp.h"
+#include "hardware.h"
 
 
 void PWM_INIT(PWMGEN *v)

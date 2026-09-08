@@ -8,7 +8,7 @@
 
 #include "eqep.h"
 #include "pin_map.h"
-#include "bsp.h"
+#include "hardware.h"
 
 void InitEqepGPIO(void);
 

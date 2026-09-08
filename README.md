@@ -25,15 +25,15 @@
 ```
 PMSM_FOC/
 ├── main.c                  # 主程序：外设初始化 + 参数设定 + 主循环
-├── app/                    # 应用层
+├── control/                    # 控制核心
 │   ├── isr.c / isr.h       # 中断服务程序（OffsetISR / MainISR）
 │   ├── globals.c / globals.h  # 全局变量（定义 / extern 声明）
 │   └── settings.h          # 系统与电机参数（编译期常量）
 ├── foc/                    # FOC 算法库（纯数学，无硬件依赖）
 │   ├── clarke.h  park.h  ipark.h  pi.h  svgen.h
 │   └── rampgen.h  rmp_cntl.h  volt_calc.h  speed_fr.h
-├── bsp/                    # 板级支持包
-│   ├── inc/                #   bsp.h、focpwm.h、focqep.h、ad7606.h、externalda.h
+├── hardware/                    # 硬件驱动
+│   ├── inc/                #   hardware.h、focpwm.h、focqep.h、ad7606.h、externalda.h
 │   └── src/                #   focpwm.c、focqep.c、ad7606.c、externalda.c
 ├── driver/  driverlib/     # TI 驱动库（源码随工程拷贝，便于换机调试）
 ├── targetConfigs/          # 仿真器目标配置（.ccxml）
@@ -52,7 +52,7 @@ PMSM_FOC/
 | 3 | 电流闭环 | 虚拟角度 | 验证电流环 PI 与速度计算 |
 | 5 | 速度闭环 | QEP 真实角度 | 完整速度环 |
 
-`BUILDLEVEL` 定义在 [app/globals.c](app/globals.c)，烧录前修改。
+`BUILDLEVEL` 定义在 [control/globals.c](control/globals.c)，烧录前修改。
 
 ### lsw 运行状态标志
 
@@ -67,7 +67,7 @@ PMSM_FOC/
 
 ## 使用步骤
 
-1. **修改使能标志**：[app/globals.c](app/globals.c) 中 `EnableFlag` 置 `TRUE`，否则主程序空转。
+1. **修改使能标志**：[control/globals.c](control/globals.c) 中 `EnableFlag` 置 `TRUE`，否则主程序空转。
 2. **选择 BUILDLEVEL**：按上表从低到高逐级上电验证。
 3. **编译烧录**：RAM 调试使用 `2837xD_RAM_lnk_cpu1.cmd`；正式运行使用 FLASH 链接脚本。
 4. **上电顺序**（LEVEL 2/3/5）：
@@ -80,13 +80,13 @@ PMSM_FOC/
 
 ## 参数调校
 
-- **系统/电机/标幺常量**：见 [app/settings.h](app/settings.h)（时钟频率、极数、电阻电感、基准量、编码器线数等）。
-- **闭环给定值（标幺）**：`VdTesting / VqTesting / IdRef / IqRef / IdLockRef / SpeedRef`，见 [app/globals.c](app/globals.c)。
+- **系统/电机/标幺常量**：见 [control/settings.h](control/settings.h)（时钟频率、极数、电阻电感、基准量、编码器线数等）。
+- **闭环给定值（标幺）**：`VdTesting / VqTesting / IdRef / IqRef / IdLockRef / SpeedRef`，见 [control/globals.c](control/globals.c)。
 - **PI 参数**：在 [main.c](main.c) 的 `main()` 中初始化（`pi_spd` / `pi_id` / `pi_iq`）。
 
 ---
 
 ## 已知注意事项
 
-- AD7606 采样在 [bsp/src/ad7606.c](bsp/src/ad7606.c) 中，6 次读取均来自同一地址 `ADCS1`（通道未区分），多通道采集待完善。
-- 外部 DAC 输出在 [app/isr.c](app/isr.c) 中，用于观测电气角/机械角/Iq 给定/反馈，超出 ±1 会被钳位。
+- AD7606 采样在 [hardware/src/ad7606.c](hardware/src/ad7606.c) 中，6 次读取均来自同一地址 `ADCS1`（通道未区分），多通道采集待完善。
+- 外部 DAC 输出在 [control/isr.c](control/isr.c) 中，用于观测电气角/机械角/Iq 给定/反馈，超出 ±1 会被钳位。

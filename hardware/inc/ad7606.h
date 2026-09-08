@@ -7,8 +7,8 @@
  *      Author: Jy
  */
 
-#ifndef BSP_INC_AD7606_H_
-#define BSP_INC_AD7606_H_
+#ifndef HARDWARE_INC_AD7606_H_
+#define HARDWARE_INC_AD7606_H_
 
 #define ADCS1        (volatile Uint16 *)0x00310000
 #define ADCS2        (volatile Uint16 *)0x00320000
@@ -28,4 +28,4 @@ extern float32 offsetb;
 extern float32 offsetc;
 extern float32 offsetf;
 
-#endif /* BSP_INC_AD7606_H_ */
+#endif /* HARDWARE_INC_AD7606_H_ */

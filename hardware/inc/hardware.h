@@ -1,15 +1,15 @@
 /*
- * bsp.h
+ * hardware.h
  *
- * 板级支持包(BSP)总头文件：基础类型、系统宏、电机/编码器/PWM 结构体，
+ * 硬件驱动总头文件：基础类型、系统宏、电机/编码器/PWM 结构体，
  * 并汇总包含 FOC 算法库与各外设驱动模块。
  *
  *  Created on: 2024年6月20日
  *      Author: jwzho
  */
 
-#ifndef BSP_INC_BSP_H_
-#define BSP_INC_BSP_H_
+#ifndef HARDWARE_INC_HARDWARE_H_
+#define HARDWARE_INC_HARDWARE_H_
 
 #include "driverlib.h"
 #include "device.h"
@@ -137,4 +137,4 @@ typedef struct {
 #include "ad7606.h"
 #include "externalda.h"
 
-#endif /* BSP_INC_BSP_H_ */
+#endif /* HARDWARE_INC_HARDWARE_H_ */

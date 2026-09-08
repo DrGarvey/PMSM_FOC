@@ -5,7 +5,7 @@
  *      Author: Jy
  */
 
-#include "bsp.h"
+#include "hardware.h"
 
 int16 addat[BUF_SIZE];
 float32 exadc[BUF_SIZE];

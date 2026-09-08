@@ -4,8 +4,8 @@
  * 外部 DAC 输出驱动。
  */
 
-#ifndef BSP_INC_EXTERNALDA_H_
-#define BSP_INC_EXTERNALDA_H_
+#ifndef HARDWARE_INC_EXTERNALDA_H_
+#define HARDWARE_INC_EXTERNALDA_H_
 
 #define DA_ADD0      (volatile Uint16 *)0x00330000
 #define DA_ADD1      (volatile Uint16 *)0x00330001
@@ -14,4 +14,4 @@
 
 void DA_Ctrl(float32 data_a, float32 data_b, float32 data_c, float32 data_d);
 
-#endif /* BSP_INC_EXTERNALDA_H_ */
+#endif /* HARDWARE_INC_EXTERNALDA_H_ */

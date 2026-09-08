@@ -6,10 +6,10 @@
  * 避免在头文件内定义变量（否则被多个 .c 包含会导致重复定义）。
  */
 
-#ifndef APP_GLOBALS_H_
-#define APP_GLOBALS_H_
+#ifndef CONTROL_GLOBALS_H_
+#define CONTROL_GLOBALS_H_
 
-#include "bsp.h"        // 依赖 QEP/CLARKE/PARK/... 等结构体类型
+#include "hardware.h"        // 依赖 QEP/CLARKE/PARK/... 等结构体类型
 
 /* ---- 程序使能 / 构建级别 ---- */
 extern volatile Uint16 EnableFlag;   // 程序使能，烧录前须置 TRUE
@@ -75,4 +75,4 @@ extern PHASEVOLTAGE volt1;
 extern SPEED_MEAS_QEP speed1;
 extern MOTOR motor1;
 
-#endif /* APP_GLOBALS_H_ */
+#endif /* CONTROL_GLOBALS_H_ */

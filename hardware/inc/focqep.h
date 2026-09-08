@@ -7,8 +7,8 @@
  *      Author: jwzho
  */
 
-#ifndef BSP_INC_FOCQEP_H_
-#define BSP_INC_FOCQEP_H_
+#ifndef HARDWARE_INC_FOCQEP_H_
+#define HARDWARE_INC_FOCQEP_H_
 
 /*-----------------------------------------------------------------------------
 QEP 对象的默认初始化值
@@ -20,4 +20,4 @@ void QEP_INIT(QEP *v);
 void InitEqepGPIO(void);
 void QEP_MACRO(QEP *v);
 
-#endif /* BSP_INC_FOCQEP_H_ */
+#endif /* HARDWARE_INC_FOCQEP_H_ */

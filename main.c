@@ -23,18 +23,18 @@
 //          - BUILDLEVEL 0：关闭 PWM 输出(保护模式)
 //
 //   模块划分：
-//     app/    —— 应用层：main.c、isr.c(中断)、globals.c(全局变量)、settings.h(参数)
+//     control/    —— 控制核心：main.c、isr.c(中断)、globals.c(全局变量)、settings.h(参数)
 //     foc/    —— FOC 算法库（Clarke/Park/PI/SVPWM 等纯数学模块）
-//     bsp/    —— 板级支持包（PWM/QEP/AD7606/外部DAC 驱动）
+//     hardware/    —— 硬件驱动（PWM/QEP/AD7606/外部DAC 驱动）
 //
-//   关键全局标志(定义于 app/globals.c)：
+//   关键全局标志(定义于 control/globals.c)：
 //     EnableFlag —— 程序使能，烧录前须置 TRUE，否则主程序一直空转
 //     BUILDLEVEL —— 决定 ISR 中执行哪一级控制算法
 //     lsw        —— 运行状态切换标志(0=抱轴/锁定，1=电流环，2=速度环等)
 //#############################################################################
 //
 
-#include "bsp.h"
+#include "hardware.h"
 #include "globals.h"
 #include "isr.h"
 
