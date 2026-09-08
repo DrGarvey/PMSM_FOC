@@ -2,17 +2,17 @@
 
 driverlib/epwm.obj: ../driverlib/epwm.c
 driverlib/epwm.obj: ../driverlib/epwm.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdbool.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_ti_config.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/linkage.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdint.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_stdint40.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/stdint.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/cdefs.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_types.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_types.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_stdint.h
-driverlib/epwm.obj: D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_stdint.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdbool.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_ti_config.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/linkage.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdint.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_stdint40.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/stdint.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/cdefs.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_types.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_types.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_stdint.h
+driverlib/epwm.obj: D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_stdint.h
 driverlib/epwm.obj: ../driverlib/inc/hw_memmap.h
 driverlib/epwm.obj: ../driverlib/inc/hw_types.h
 driverlib/epwm.obj: ../driverlib/inc/hw_epwm.h
@@ -30,27 +30,27 @@ driverlib/epwm.obj: ../driverlib/inc/hw_pie.h
 
 ../driverlib/epwm.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdbool.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdbool.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_ti_config.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_ti_config.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/linkage.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/linkage.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdint.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/stdint.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_stdint40.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/_stdint40.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/stdint.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/stdint.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/cdefs.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/cdefs.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_types.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_types.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_types.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_types.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_stdint.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/machine/_stdint.h:
 
-D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_stdint.h:
+D:/Programs/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include/sys/_stdint.h:
 
 ../driverlib/inc/hw_memmap.h:
 
