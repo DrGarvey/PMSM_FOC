@@ -17,6 +17,7 @@
 //        零漂(offset)标定。零漂标定完成后，将中断服务函数动态切换为 MainISR。
 //     2) MainISR：FOC 主中断，按下面的固定流水线执行。
 //
+<<<<<<< HEAD
 //   ---- MainISR 流水线（2.0 版重构）----
 //   以前是四个 if/else if 分支各写一整套 ISR 体，Level 3 与 Level 5 约 80% 的代码
 //   逐字重复，导致"只在某一级正确"的缺陷。现在改成一条公共流水线，每一级只在
@@ -30,6 +31,14 @@
 //     第 5 段  Observe_Run    DA 观测输出与中断应答
 //
 //   ---- 关键全局标志(定义于 VariablesInit.h) ----
+=======
+//   模块划分：
+//     control/    —— 控制核心：main.c、isr.c(中断)、globals.c(全局变量)、settings.h(参数)
+//     foc/    —— FOC 算法库（Clarke/Park/PI/SVPWM 等纯数学模块）
+//     hardware/    —— 硬件驱动（PWM/QEP/AD7606/外部DAC 驱动）
+//
+//   关键全局标志(定义于 control/globals.c)：
+>>>>>>> a5d651262611fda8af1a97cacb628d203cf7bf3e
 //     EnableFlag —— 程序使能，烧录前须置 TRUE，否则主程序一直空转
 //     BUILDLEVEL —— 决定使用 LevelCfg[] 表中的哪一行配置
 //     lsw        —— 运行状态切换标志，语义已统一，见下方 LSW_xxx 定义
@@ -40,6 +49,7 @@
 //
 //#############################################################################
 
+<<<<<<< HEAD
 #include "user.h"
 #include "VariablesInit.h"
 
@@ -144,6 +154,11 @@ void InverterProtect(PWMGEN *v);
 
 // 程序使能，需要在程序烧录前修改为 TRUE，否则程序始终循环不执行
 volatile Uint16 EnableFlag = TRUE;
+=======
+#include "hardware.h"
+#include "globals.h"
+#include "isr.h"
+>>>>>>> a5d651262611fda8af1a97cacb628d203cf7bf3e
 
 
 /*==============================================================================
@@ -559,15 +574,20 @@ void main(void)
         BackTicker++;
     }
 
+<<<<<<< HEAD
     // 说明：原来自制板上有一个 GPIO8 用于控制逆变器使能/继电器，
     // 换成 LAUNCHXL-F28379D 后由 BoosterPack 功率级自己管理使能，这个引脚已移除。
+=======
+    InverterRST_Init();
+    GPIO_writePin(8U, 1U);
+>>>>>>> a5d651262611fda8af1a97cacb628d203cf7bf3e
 
     // ================= PWM 模块参数设定 =================
     // 采用上下计数模式(UP-DOWN)，时钟分频为 1，即 TBCLK = EPWMCLK = SYSCLK/2 = 100MHz
     // 上下计数模式下 PWM 周期 = 2 * PeriodMax * TBCLK，中断在计数到零(TBCTR=0)时触发
     // 因此 PeriodMax = TBCLK / 采样频率 / 2 = (100MHz / 10kHz) / 2 = 5000
-    // 对应代码公式：SYSTEM_FREQUENCY * 1e6 * T / 4 = 200e6 * 0.0001 / 4 = 5000
-    pwm1.PeriodMax = SYSTEM_FREQUENCY * 1000000 * T / 4; // 预分频 X1 (T1)，ISR 周期 = T x 1
+    // 对应代码公式：SYSTEM_FREQUENCY * 1e6 * SAMPLE_TIME / 4 = 200e6 * 0.0001 / 4 = 5000
+    pwm1.PeriodMax = SYSTEM_FREQUENCY * 1000000 * SAMPLE_TIME / 4; // 预分频 X1 (T1)，ISR 周期 = SAMPLE_TIME
     // 占空比 50% 对应的比较值 = PeriodMax / 2，即 CMPA = HalfPerMax 时输出 50% 占空比
     pwm1.HalfPerMax = pwm1.PeriodMax / 2;
     // 死区时间设定：2.0us 对应的 TBCLK 计数 = 2.0us * TBCLK 频率 = 2.0 * (SYSCLK/2) = 200 counts
@@ -593,23 +613,29 @@ void main(void)
     Protect_INIT(&protect1);
 
     // 编码器参数设定
-    qep1.LineEncoder = 2500;        //2500 线编码器
+    qep1.LineEncoder = LINE_ENCODER;        //2500 线编码器
     //机械分辨率，QEP 模块一般是上下沿计数，A、B 两个信号的上下沿共有四个
     //所以一圈内有 4*2500 个计数，分辨率就是计数的倒数
     qep1.MechScaler = _IQ30(0.25 / qep1.LineEncoder);
+<<<<<<< HEAD
     qep1.PolePairs = POLES / 2;     // 4 对极（FOC.h 中 POLES = 8）
     qep1.CalibratedAngle = 0;    //记录 Z 信号和电气零位置偏差值
     QEP_INIT(&qep1);
     //EQEP_setLatchMode(myQEP_BASE, EQEP_LATCH_CNT_READ_BY_CPU);
+=======
+    qep1.PolePairs = POLES / 2;     //极对数
+    qep1.CalibratedAngle = 0;    //记录 Z 信号和电气零位置偏差值
+    QEP_INIT(&qep1);
+>>>>>>> a5d651262611fda8af1a97cacb628d203cf7bf3e
 
     // 初始化基于 QEP 的速度计算模块
-    speed1.K1 = _IQ21(1/(BASE_FREQ*T));
-    speed1.K2 = _IQ(1 / (1 + T * 2 * PI * 5));  // 低通滤波截止频率
+    speed1.K1 = _IQ21(1/(BASE_FREQ*SAMPLE_TIME));
+    speed1.K2 = _IQ(1 / (1 + SAMPLE_TIME * 2 * PI * 5));  // 低通滤波截止频率
     speed1.K3 = _IQ(1) - speed1.K2;
     speed1.BaseRpm = 120 * (BASE_FREQ / POLES);
 
     // 初始化 RAMPGEN 模块
-    rg1.StepAngleMax = _IQ(BASE_FREQ*T);
+    rg1.StepAngleMax = _IQ(BASE_FREQ*SAMPLE_TIME);
 
     // ==================== PI 参数初始化 ====================
     // 注意下面每个环路的变量名：
@@ -619,20 +645,24 @@ void main(void)
 
     // 速度环 pi_spd
     pi_spd.Kp = _IQ(0.05);
+<<<<<<< HEAD
     //pi_spd.Ki = _IQ(T * SpeedLoopPrescaler / 0.2);
     pi_spd.Ki = _IQ(0.0);           // 目前是纯比例速度环，放开上一行即可启用积分
+=======
+    pi_spd.Ki = _IQ(0.0);
+>>>>>>> a5d651262611fda8af1a97cacb628d203cf7bf3e
     pi_spd.Umax = _IQ(0.95);
     pi_spd.Umin = _IQ(-0.95);
 
     // 电流环 d 轴 pi_id
     pi_id.Kp = _IQ(1.0);
-    pi_id.Ki = _IQ(T / 0.04);
+    pi_id.Ki = _IQ(SAMPLE_TIME / 0.04);
     pi_id.Umax = _IQ(0.4);
     pi_id.Umin = _IQ(-0.4);
 
     // 电流环 q 轴 pi_iq
     pi_iq.Kp = _IQ(1.0);
-    pi_iq.Ki = _IQ(T / 0.04);
+    pi_iq.Ki = _IQ(SAMPLE_TIME / 0.04);
     pi_iq.Umax = _IQ(0.8);
     pi_iq.Umin = _IQ(-0.8);
 
@@ -654,6 +684,7 @@ void main(void)
     }
 
 }
+<<<<<<< HEAD
 
 
 /*==============================================================================
@@ -803,3 +834,5 @@ void InverterProtect(PWMGEN *v)
     EPWM_setCounterCompareValue(EPWM2_BASE, EPWM_COUNTER_COMPARE_A, _IQmpy(ClosePWM,v->HalfPerMax) + v->HalfPerMax);
     EPWM_setCounterCompareValue(EPWM3_BASE, EPWM_COUNTER_COMPARE_A, _IQmpy(ClosePWM,v->HalfPerMax) + v->HalfPerMax);
 }
+=======
+>>>>>>> a5d651262611fda8af1a97cacb628d203cf7bf3e

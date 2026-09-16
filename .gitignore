@@ -1,0 +1,12 @@
+# ===== 编译产物 / 构建目录 =====
+Debug/
+Release/
+CPU1_RAM/
+*.out
+*.obj
+*.o
+*.map
+*.lib
+
+# ===== IDE 自动生成 (clangd 索引 / 配置) =====
+.clangd
