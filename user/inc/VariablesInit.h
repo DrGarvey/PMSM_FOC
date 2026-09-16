@@ -12,8 +12,9 @@
 
 // 全局变量的定义
 // _iq 是IQmath的数据类型，与int，float类似
-
-_iq Udc=0;
+// 注意：本工程的 IQmathLib.h 里 MATH_TYPE 定义为 FLOAT_MATH，
+// 因此 _iq 实际就是 float，_IQ()/_IQ30() 等宏都是恒等展开，
+// 各头文件里标注的 "Q24/Q30/Q21" 只是 TI 原始库的遗留说明，对本工程不适用。
 
 _iq OffsetFlag=0;    //零漂采集标志位
 _iq offsetA=0;          //ABC三相的零漂
@@ -34,9 +35,9 @@ _iq ExDA_D_Test = 0;
 _iq K1=_IQ(0.998);      //零漂滤波系数 K1：0.05/(T+0.05)；K1是卡尔曼滤波器的一个参数，由采样时间T决定
 _iq K2=_IQ(0.001999);   //零漂滤波系数 K2：T/(T+0.05)；K2是卡尔曼滤波器的另一个参数
 
-//sin和cos表
-extern _iq IQsinTable[];
-extern _iq IQcosTable[];
+// 说明：TI 原始例程在这里声明 IQsinTable[]/IQcosTable[] 正弦查表，
+// 那是 IQ_MATH 模式下的实现；本工程用 FLOAT_MATH，_IQsinPU/_IQcosPU 直接映射到
+// 硬件三角函数指令，不再使用查表，故这两条声明已删除。
 
 //闭环测试时使用的给定值，该数值为标幺值，非实际值，范围为(-1,1)
 //标幺的标准可以参考HVPM_Sensorless-Settings.h文件中的设定
@@ -57,8 +58,9 @@ Uint16 BackTicker = 0;
 Uint32 MainIsrTicker = 0;
 Uint32 OffsetIsrTicker = 0;
 Uint16 lsw=0;                       //lsw标志位比较重要，是切换程序运行状态的重要标志位
-Uint16 TripFlagDMC=0;               //PWM 保护状态
-Uint32 Init_IFlag=0;
+                                    //语义已统一：0=抱轴/停止 1=电流环 2=速度环 3=跳过计算
+                                    //（原 TripFlagDMC 已被 protect1 取代，见文件末尾）
+Uint32 Init_IFlag=0;                //编码器 index 标定完成标志；lsw 由 0 切到非 0 时会自动清零重标
 
 Uint32 BUILDLEVEL = 0;
 
@@ -118,4 +120,14 @@ PHASEVOLTAGE volt1 = PHASEVOLTAGE_DEFAULTS;
 SPEED_MEAS_QEP speed1 = SPEED_MEAS_QEP_DEFAULTS;
 
 MOTOR motor1 = MOTOR_DEFAULTS;
+
+// 故障保护对象
+// 运行期间在 CCS 的 Expressions 窗口观察这几个成员：
+//   protect1.FaultCode  —— 故障码（0=无故障，含义见 FOCProtect.h）
+//   protect1.Tripped    —— 1 = 已跳闸，PWM 被硬件封锁
+//   protect1.TripCount  —— 累计跳闸次数
+// 恢复方法：排查完故障原因后，手工把 protect1.RecoverReq 置 1。
+// 恢复后 lsw 会被强制清 0（回到抱轴态），必须重新置位才能继续运行。
+PROTECT protect1 = PROTECT_DEFAULTS;
+
 #endif /* USER_INC_VARIABLESINIT_H_ */

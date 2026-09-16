@@ -8,6 +8,29 @@
 #ifndef USER_INC_USER_H_
 #define USER_INC_USER_H_
 
+/*==============================================================================
+  板级自检：本工程按 LAUNCHXL-F28379D 编写，必须定义 _LAUNCHXL_F28379D
+
+  driver/device.h 里有一处 #ifdef _LAUNCHXL_F28379D，决定 PLL 按哪种晶振配置：
+    · 定义了这个符号   → 按 10MHz 晶振配置（LaunchPad 用的就是这个）
+    · 没定义           → 按 20MHz 晶振配置（TMDSCNCD28379D 控制卡）
+
+  LaunchPad 上是 10MHz 晶振。如果漏定义，PLL 会按 20MHz 算，结果是
+  PLLSYSCLK 只有 100MHz 而不是 200MHz——而本工程的 CPU_RATE、ISR_FREQUENCY、
+  SYSTEM_FREQUENCY、pwm1.PeriodMax 推导、DELAY_US 全都按 200MHz 写死。
+  后果是中断频率、死区时间、各处延时统统错一倍，而 device.c 里那句
+  时钟断言不会报错（因为等式两边一起变了），排查起来非常痛苦。
+
+  所以这里用 #error 直接把它拦在编译期。
+
+  添加方法：工程属性 → Build → C2000 Compiler → Predefined Symbols，
+  加入 _LAUNCHXL_F28379D；或者用 ccs-project 的 setToolFlags 工具。
+  注意 Debug 和 Release 两个配置都要加。
+==============================================================================*/
+#ifndef _LAUNCHXL_F28379D
+#error "请在工程里定义预定义符号 _LAUNCHXL_F28379D（LaunchPad 是 10MHz 晶振，否则芯片只跑 100MHz）。详见 user.h 注释。"
+#endif
+
 #include "driverlib.h"
 #include "device.h"
 #include "IQmathLib.h"
@@ -87,19 +110,18 @@ extern void F28x_usDelay(long LoopCount);
 #define ISR_FREQUENCY 10
 #define SYSTEM_FREQUENCY 200
 
-
+// 采样结果。三个量都由 user/src/FOCADC.c 从片上 ADC 读回并换算成 ±1 的
+// 双极性标幺值（12 位码 2048 对应 0.0），与原来 AD7606 方案的语义一致，
+// 因此 clarke1.As = motor1.Ia - offsetA 这条下游链路完全不用改。
 typedef struct {
-                    _iq Ia;
-                    _iq Ib;
-                    _iq Ic;
-                    _iq Udc;
-                    _iq ADRdTicker;
-                    _iq ADWaitTicker;
-
+                    _iq     Ia;         // A 相电流（已换算为标幺值）
+                    _iq     Ib;         // B 相电流
+                    _iq     Udc;        // 母线电压
+                    Uint16  ADTimeout;  // 1 = ADC 转换完成标志连续多拍未置位（供保护判据使用）
                 } MOTOR;
 
 
-#define MOTOR_DEFAULTS {0, 0, 0, 0, 0, 0}
+#define MOTOR_DEFAULTS {0, 0, 0, 0}
 
 typedef struct {
                     _iq ElecTheta;        // 输出：电机电气角度 (Q24)
@@ -145,9 +167,14 @@ typedef struct {
 #include "FOCPWM.h"
 #include "FOCQEP.h"
 
+//=====================片上外设：采样 / 模拟输出 / 串口=========================
+// 这三块对应原来自制板上的"外部 AD7606 + EMIF 并行 DAC"，
+// 换成 LAUNCHXL-F28379D 后改用芯片自带的 ADC / DAC / SCI。
+#include "FOCADC.h"
+#include "FOCDAC.h"
+#include "FOCSCI.h"
 
-//=====================Others======================================
-#include "AD7606.h"
-#include "ExternalDA.h"
+//=====================故障保护================================================
+#include "FOCProtect.h"
 
 #endif /* USER_INC_USER_H_ */

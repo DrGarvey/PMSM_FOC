@@ -10,6 +10,12 @@
 
 void PWM_INIT(PWMGEN *v)
 {
+    // EPWMCLK 分频：EPWMCLK = SYSCLK / 2 = 100MHz
+    // 这一句原先在 AD7606 的 EMIF 初始化里（当时顺手设的），AD7606 移除后挪到这里。
+    // 放在 EPWM 配置之前才是正确顺序——时基周期、死区计数的换算都以此为基准，
+    // 原先把时钟分频设在 EPWM 配置之后属于隐患（当时能工作只是因为复位值恰好也是 /2）。
+    SysCtl_setEPWMClockDivider(SYSCTL_EPWMCLK_DIV_2);
+
     InitEpwmGPIO();
 
     //TBCTL.CTRMODE = 2
@@ -93,6 +99,18 @@ void PWM_INIT(PWMGEN *v)
     EPWM_setInterruptSource(EPWM1_BASE,EPWM_INT_TBCTR_ZERO);
     EPWM_setInterruptEventCount(EPWM1_BASE, 1U);
     EPWM_enableInterrupt(EPWM1_BASE);
+
+    // ================= ADC 采样触发 =================
+    // 计数器到达峰值(TBCTR = TBPRD)时发出 ADCSOCA，硬件触发三个 ADC 同时启动转换。
+    //
+    // 为什么放在峰值而不是与中断同在谷值：
+    //   中心对齐 PWM 下，相电流在计数器谷值和峰值两处都等于其平均值，
+    //   所以两个时刻采样都准确。但主中断在谷值运行(TBCTR_ZERO)，
+    //   若采样也放在谷值，两者同时刻发生，中断只能读到上一整周期的数据(100us)；
+    //   放在峰值则数据只滞后半个周期(50us)，控制延迟减半。
+    EPWM_setADCTriggerSource(EPWM1_BASE, EPWM_SOC_A, EPWM_SOC_TBCTR_PERIOD);
+    EPWM_setADCTriggerEventPrescale(EPWM1_BASE, EPWM_SOC_A, 1U);
+    EPWM_enableADCTrigger(EPWM1_BASE, EPWM_SOC_A);
 
 }
 
