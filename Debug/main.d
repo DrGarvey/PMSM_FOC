@@ -108,9 +108,13 @@ main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/FOC/volt_calc.h
 main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/FOC/speed_fr.h
 main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCPWM.h
 main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCQEP.h
-main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/AD7606.h
-main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/ExternalDA.h
+main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCADC.h
+main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCDAC.h
+main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCSCI.h
+main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCProtect.h
 main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/VariablesInit.h
+main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCLevel.h
+main.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCTask.h
 
 ../main.c:
 
@@ -328,9 +332,17 @@ D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCPWM.h:
 
 D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCQEP.h:
 
-D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/AD7606.h:
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCADC.h:
 
-D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/ExternalDA.h:
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCDAC.h:
+
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCSCI.h:
+
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCProtect.h:
 
 D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/VariablesInit.h:
+
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCLevel.h:
+
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCTask.h:
 

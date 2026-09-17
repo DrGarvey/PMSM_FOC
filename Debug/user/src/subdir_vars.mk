@@ -6,39 +6,69 @@ SHELL = cmd.exe
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-../user/src/AD7606.c \
-../user/src/ExternalDA.c \
+../user/src/FOCADC.c \
+../user/src/FOCDAC.c \
+../user/src/FOCLevel.c \
 ../user/src/FOCPWM.c \
-../user/src/FOCQEP.c 
+../user/src/FOCProtect.c \
+../user/src/FOCQEP.c \
+../user/src/FOCSCI.c \
+../user/src/FOCTask.c \
+../user/src/VariablesInit.c 
 
 C_DEPS += \
-./user/src/AD7606.d \
-./user/src/ExternalDA.d \
+./user/src/FOCADC.d \
+./user/src/FOCDAC.d \
+./user/src/FOCLevel.d \
 ./user/src/FOCPWM.d \
-./user/src/FOCQEP.d 
+./user/src/FOCProtect.d \
+./user/src/FOCQEP.d \
+./user/src/FOCSCI.d \
+./user/src/FOCTask.d \
+./user/src/VariablesInit.d 
 
 OBJS += \
-./user/src/AD7606.obj \
-./user/src/ExternalDA.obj \
+./user/src/FOCADC.obj \
+./user/src/FOCDAC.obj \
+./user/src/FOCLevel.obj \
 ./user/src/FOCPWM.obj \
-./user/src/FOCQEP.obj 
+./user/src/FOCProtect.obj \
+./user/src/FOCQEP.obj \
+./user/src/FOCSCI.obj \
+./user/src/FOCTask.obj \
+./user/src/VariablesInit.obj 
 
 OBJS__QUOTED += \
-"user\src\AD7606.obj" \
-"user\src\ExternalDA.obj" \
+"user\src\FOCADC.obj" \
+"user\src\FOCDAC.obj" \
+"user\src\FOCLevel.obj" \
 "user\src\FOCPWM.obj" \
-"user\src\FOCQEP.obj" 
+"user\src\FOCProtect.obj" \
+"user\src\FOCQEP.obj" \
+"user\src\FOCSCI.obj" \
+"user\src\FOCTask.obj" \
+"user\src\VariablesInit.obj" 
 
 C_DEPS__QUOTED += \
-"user\src\AD7606.d" \
-"user\src\ExternalDA.d" \
+"user\src\FOCADC.d" \
+"user\src\FOCDAC.d" \
+"user\src\FOCLevel.d" \
 "user\src\FOCPWM.d" \
-"user\src\FOCQEP.d" 
+"user\src\FOCProtect.d" \
+"user\src\FOCQEP.d" \
+"user\src\FOCSCI.d" \
+"user\src\FOCTask.d" \
+"user\src\VariablesInit.d" 
 
 C_SRCS__QUOTED += \
-"../user/src/AD7606.c" \
-"../user/src/ExternalDA.c" \
+"../user/src/FOCADC.c" \
+"../user/src/FOCDAC.c" \
+"../user/src/FOCLevel.c" \
 "../user/src/FOCPWM.c" \
-"../user/src/FOCQEP.c" 
+"../user/src/FOCProtect.c" \
+"../user/src/FOCQEP.c" \
+"../user/src/FOCSCI.c" \
+"../user/src/FOCTask.c" \
+"../user/src/VariablesInit.c" 
 
 

@@ -108,8 +108,10 @@ user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/FOC/volt
 user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/FOC/speed_fr.h
 user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCPWM.h
 user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCQEP.h
-user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/AD7606.h
-user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/ExternalDA.h
+user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCADC.h
+user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCDAC.h
+user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCSCI.h
+user/src/FOCQEP.obj: D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCProtect.h
 
 ../user/src/FOCQEP.c:
 
@@ -327,7 +329,11 @@ D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCPWM.h:
 
 D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCQEP.h:
 
-D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/AD7606.h:
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCADC.h:
 
-D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/ExternalDA.h:
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCDAC.h:
+
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCSCI.h:
+
+D:/Program\ Documents/CCS\ projects/PMSM_FOC_28377/user/inc/FOCProtect.h:
 

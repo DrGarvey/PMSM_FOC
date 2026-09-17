@@ -1,187 +1,212 @@
 [
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/F2837xD_CodeStartBranch.asm"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driver/device.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/adc.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/asysctl.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/cla.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/clb.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/cmpss.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/cputimer.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/dac.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/dcsm.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/dma.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/ecap.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/emif.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/epwm.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/eqep.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/flash.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/gpio.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/hrpwm.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/i2c.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/interrupt.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/ipc.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/mcbsp.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/memcfg.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/sci.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/sdfm.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/spi.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/sysctl.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/upp.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/usb.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/version.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/xbar.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/main.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc/F2837xD_usDelay.asm"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
-      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/AD7606.c"
-   },
-   {
-      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
-      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/ExternalDA.c"
-   },
-   {
-      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCPWM.c"
    },
    {
       "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
-      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -xc",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
       "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCQEP.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCADC.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCDAC.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCLevel.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCProtect.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCSCI.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/FOCTask.c"
+   },
+   {
+      "directory" : "D:/Program Documents/CCS projects/PMSM_FOC_28377/Debug",
+      "command"   : "clang++ -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/FOC\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/user/inc\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driver\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib\" -I\"D:/Program Documents/CCS projects/PMSM_FOC_28377/driverlib/inc\" -I\"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include\" -DCPU1 -D_LAUNCHXL_F28379D -xc",
+      "file"      : "D:/Program Documents/CCS projects/PMSM_FOC_28377/user/src/VariablesInit.c"
    }
 ]

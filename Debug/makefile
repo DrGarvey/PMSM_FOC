@@ -43,10 +43,15 @@ ORDERED_OBJS += \
 "./driverlib/version.obj" \
 "./driverlib/xbar.obj" \
 "./user/inc/F2837xD_usDelay.obj" \
-"./user/src/AD7606.obj" \
-"./user/src/ExternalDA.obj" \
+"./user/src/FOCADC.obj" \
+"./user/src/FOCDAC.obj" \
+"./user/src/FOCLevel.obj" \
 "./user/src/FOCPWM.obj" \
+"./user/src/FOCProtect.obj" \
 "./user/src/FOCQEP.obj" \
+"./user/src/FOCSCI.obj" \
+"./user/src/FOCTask.obj" \
+"./user/src/VariablesInit.obj" \
 "../2837xD_RAM_lnk_cpu1.cmd" \
 "../driverlib/ccs/Debug/driverlib.lib" \
 $(GEN_CMDS__FLAG) \
@@ -176,15 +181,15 @@ all: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 # Tool invocations
 PMSM_FOC_28377.out: $(OBJS) $(CMD_SRCS) $(LIB_SRCS) $(GEN_CMDS)
 	@echo 'C2000 Linker - building target: "$@"'
-	"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O4 --fp_mode=relaxed --define=CPU1 -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"PMSM_FOC_28377.map" --stack_size=0x200 --warn_sections -i"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/lib" -i"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="PMSM_FOC_28377_linkInfo.xml" --rom_model -o "PMSM_FOC_28377.out" $(ORDERED_OBJS)
+	"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/bin/cl2000" -v28 -ml -mt --cla_support=cla1 --float_support=fpu32 --tmu_support=tmu0 --vcu_support=vcu2 -O4 --fp_mode=relaxed --define=CPU1 --define=_LAUNCHXL_F28379D -g --diag_warning=225 --diag_wrap=off --display_error_number --abi=coffabi -z -m"PMSM_FOC_28377.map" --stack_size=0x200 --warn_sections -i"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/lib" -i"D:/Programs/Research/ti/ccs/ccs/tools/compiler/ti-cgt-c2000_25.11.1.LTS/include" --reread_libs --diag_wrap=off --display_error_number --xml_link_info="PMSM_FOC_28377_linkInfo.xml" --rom_model -o "PMSM_FOC_28377.out" $(ORDERED_OBJS)
 	@echo 'Finished building target: "$@"'
 	@echo ' '
 
 # Other Targets
 clean:
 	-$(RM) $(EXE_OUTPUTS__QUOTED)
-	-$(RM) "F2837xD_CodeStartBranch.obj" "main.obj" "driver\device.obj" "driverlib\adc.obj" "driverlib\asysctl.obj" "driverlib\cla.obj" "driverlib\clb.obj" "driverlib\cmpss.obj" "driverlib\cputimer.obj" "driverlib\dac.obj" "driverlib\dcsm.obj" "driverlib\dma.obj" "driverlib\ecap.obj" "driverlib\emif.obj" "driverlib\epwm.obj" "driverlib\eqep.obj" "driverlib\flash.obj" "driverlib\gpio.obj" "driverlib\hrpwm.obj" "driverlib\i2c.obj" "driverlib\interrupt.obj" "driverlib\ipc.obj" "driverlib\mcbsp.obj" "driverlib\memcfg.obj" "driverlib\sci.obj" "driverlib\sdfm.obj" "driverlib\spi.obj" "driverlib\sysctl.obj" "driverlib\upp.obj" "driverlib\usb.obj" "driverlib\version.obj" "driverlib\xbar.obj" "user\inc\F2837xD_usDelay.obj" "user\src\AD7606.obj" "user\src\ExternalDA.obj" "user\src\FOCPWM.obj" "user\src\FOCQEP.obj" 
-	-$(RM) "main.d" "driver\device.d" "driverlib\adc.d" "driverlib\asysctl.d" "driverlib\cla.d" "driverlib\clb.d" "driverlib\cmpss.d" "driverlib\cputimer.d" "driverlib\dac.d" "driverlib\dcsm.d" "driverlib\dma.d" "driverlib\ecap.d" "driverlib\emif.d" "driverlib\epwm.d" "driverlib\eqep.d" "driverlib\flash.d" "driverlib\gpio.d" "driverlib\hrpwm.d" "driverlib\i2c.d" "driverlib\interrupt.d" "driverlib\ipc.d" "driverlib\mcbsp.d" "driverlib\memcfg.d" "driverlib\sci.d" "driverlib\sdfm.d" "driverlib\spi.d" "driverlib\sysctl.d" "driverlib\upp.d" "driverlib\usb.d" "driverlib\version.d" "driverlib\xbar.d" "user\src\AD7606.d" "user\src\ExternalDA.d" "user\src\FOCPWM.d" "user\src\FOCQEP.d" 
+	-$(RM) "F2837xD_CodeStartBranch.obj" "main.obj" "driver\device.obj" "driverlib\adc.obj" "driverlib\asysctl.obj" "driverlib\cla.obj" "driverlib\clb.obj" "driverlib\cmpss.obj" "driverlib\cputimer.obj" "driverlib\dac.obj" "driverlib\dcsm.obj" "driverlib\dma.obj" "driverlib\ecap.obj" "driverlib\emif.obj" "driverlib\epwm.obj" "driverlib\eqep.obj" "driverlib\flash.obj" "driverlib\gpio.obj" "driverlib\hrpwm.obj" "driverlib\i2c.obj" "driverlib\interrupt.obj" "driverlib\ipc.obj" "driverlib\mcbsp.obj" "driverlib\memcfg.obj" "driverlib\sci.obj" "driverlib\sdfm.obj" "driverlib\spi.obj" "driverlib\sysctl.obj" "driverlib\upp.obj" "driverlib\usb.obj" "driverlib\version.obj" "driverlib\xbar.obj" "user\inc\F2837xD_usDelay.obj" "user\src\FOCADC.obj" "user\src\FOCDAC.obj" "user\src\FOCLevel.obj" "user\src\FOCPWM.obj" "user\src\FOCProtect.obj" "user\src\FOCQEP.obj" "user\src\FOCSCI.obj" "user\src\FOCTask.obj" "user\src\VariablesInit.obj" 
+	-$(RM) "main.d" "driver\device.d" "driverlib\adc.d" "driverlib\asysctl.d" "driverlib\cla.d" "driverlib\clb.d" "driverlib\cmpss.d" "driverlib\cputimer.d" "driverlib\dac.d" "driverlib\dcsm.d" "driverlib\dma.d" "driverlib\ecap.d" "driverlib\emif.d" "driverlib\epwm.d" "driverlib\eqep.d" "driverlib\flash.d" "driverlib\gpio.d" "driverlib\hrpwm.d" "driverlib\i2c.d" "driverlib\interrupt.d" "driverlib\ipc.d" "driverlib\mcbsp.d" "driverlib\memcfg.d" "driverlib\sci.d" "driverlib\sdfm.d" "driverlib\spi.d" "driverlib\sysctl.d" "driverlib\upp.d" "driverlib\usb.d" "driverlib\version.d" "driverlib\xbar.d" "user\src\FOCADC.d" "user\src\FOCDAC.d" "user\src\FOCLevel.d" "user\src\FOCPWM.d" "user\src\FOCProtect.d" "user\src\FOCQEP.d" "user\src\FOCSCI.d" "user\src\FOCTask.d" "user\src\VariablesInit.d" 
 	-$(RM) "F2837xD_CodeStartBranch.d" "user\inc\F2837xD_usDelay.d" 
 	-@echo ' '
 
